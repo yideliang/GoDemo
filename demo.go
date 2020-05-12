@@ -11,6 +11,18 @@ type Student struct {
 	Course []string
 }
 
+type Node struct {
+	data int
+	next *Node
+}
+
+func showNode(p *Node){
+	for p != nil{
+		fmt.Println(*p)
+		p = p.next
+	}
+}
+
 func structtojson(){
 	group := Student{
 		Name: "Dennis",
@@ -50,23 +62,6 @@ func fibonacci(n int) int{
 		return n
 	}
 	return fibonacci(n-1) + fibonacci(n-2)
-}
-
-func main() {
-	fmt.Println("Hello, World!")
-	var a = "abc"
-	fmt.Println(a)
-
-	_, numb, strs := number()
-	fmt.Println(numb, strs)
-
-	primenumber()
-	//fmt.Println("\n")
-
-	res := fibonacci(10)
-	fmt.Println(res)
-
-	structtojson()
 }
 
 

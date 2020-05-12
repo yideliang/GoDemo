@@ -1,15 +1,5 @@
 package main
 
-import "fmt"
-
-func main(){
-	//s := []string{"flow", "flower", "flight"}
-	var s = []string{"flow", "flower", "flight"}
-	result := longestCommonPrefix(s)
-	fmt.Println(result)
-	fmt.Println("asdfads")
-}
-
 func findShortestArray(s []string) string{
 	if len(s) == 0{
 		return ""
